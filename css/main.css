@@ -12,9 +12,16 @@
   font-variation-settings:
     "wdth" 100;
 } */
-*, ::before, ::after {
+*,
+::before,
+::after {
   /* outline: 1px solid red; */
 }
+
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
 }
@@ -54,8 +61,6 @@ h3 {
 
 .header img {
   opacity: 0.7;
-  
-
 }
 
 .nav {
@@ -66,8 +71,6 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {}
 
 .nav__items {
   display: flex;
@@ -107,45 +110,116 @@ h3 {
   font: 900 30px "Merriweather", sans-serif;
   color: #fff;
 }
-@media screen and (max-width: 1030px) {
+
+.materialen__inner {
+  display: flex;
+  gap: 73px;
+  justify-content: center;
+  padding-top: 26px;
+}
+
+.materialen__text {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.materialen__h2 {
+  font: 900 30px "Merriweather", sans-serif;
+  color: #222f33;
+}
+
+.materialen__p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8571;
+  color: #646d70;
+}
+
+.materialen__btn {
+  border: 1px solid #646d70;
+  border-radius: 4px;
+  width: 90px;
+  height: 34px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #606b74;
+  text-align: center;
+}
+
+.materialen__img {
+  transform: translateY(-102px);
+}
+
+@media screen and (max-width: 1030px) {}
+@media screen and (max-width: 768px) {
+.materialen__img {
+  transform: none;
+}
 }
 @media screen and (max-width: 670px) {
   .nav {
     flex-direction: column;
     gap: 30px;
   }
+
   .nav__text {
     padding: 0 15px 52px;
     margin-top: auto;
   }
+
   .header {
     display: flex;
     flex-direction: column;
   }
+
   .nav__items {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
   }
-  
+  .materialen__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
+
 @media screen and (max-width: 420px) {
   .nav__h1 {
     font-size: 20px;
   }
+
   .header {
     height: 100vh;
   }
 }
-@media screen and (max-width: 360px) {
 
+@media screen and (max-width: 360px) {
+  .materialen__img {
+    object-position: center;
+    object-fit: contain;
+  }
+  .materialen__img img {
+    width: 100%;
+    height: auto;
+  }
+  .materialen__text {
+    width: 100%;
+  }
 }
+
 @media screen and (max-width: 300px) {
   .nav__items {
     flex-direction: column;
   }
+
   .nav__h1 {
     font-size: 18px;
   }
+  .materialen__h2 {
+    font-size: 20px;
+  }
 }
+
 @media screen and (max-width: 200px) {}

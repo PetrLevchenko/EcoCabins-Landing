@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/modern-normalize.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="img/free-icon-e-10819102.png">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,26 +17,80 @@
 </head>
 
 <body>
-<div class="lending">
-  <header class="header">
-    <nav class="nav">
-      <div class="logo">
-        <img src="img/Logo horizontal.png" alt="надпись EcoCabins">
+  <div class="lending">
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <img src="img/Logo horizontal.png" alt="надпись EcoCabins">
+        </div>
+        <ul class="nav__items">
+          <li><a href="#">Modelen</a></li>
+          <li><a href="#">Kopen</a></li>
+          <li><a href="#">Huren</a></li>
+          <li><a href="#">Nieuws</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__text">
+        <p class="nav__p">Duurzame tiny huisjes</p>
+        <h1 class="nav__h1">Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen
+        </h1>
       </div>
-      <ul class="nav__items">
-        <li><a href="#">Modelen</a></li>
-        <li><a href="#">Kopen</a></li>
-        <li><a href="#">Huren</a></li>
-        <li><a href="#">Nieuws</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="nav__text">
-      <p class="nav__p">Duurzame tiny huisjes</p>
-      <h1 class="nav__h1">Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen</h1>
-    </div>
-  </header>
-</div>
+    </header>
+    <!-- Materialen -->
+    <section class="materialen">
+      <div class="materialen__inner">
+        <div class="materialen__text">
+          <h2 class="materialen__h2">Duurzame materialen</h2>
+          <p class="materialen__p">Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd met indien
+            mogelijk duurzame en/of natuurlijke materialen en hebben als opvallende uiterlijke kenmerk de ‘ronde
+            hoeken’, mogelijk gemaakt door het specifieke materiaalgebruik. De voordelen van bouwen met hout zijn legio:
+            hout is licht, flexibel, isoleert goed en bouwt snel en efficiënt.</p>
+          <!-- Кнопка запуска модального окна -->
+          <button class=" btn materialen__btn" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">Lees meer</button>
+          <!-- Модальное окно -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Duurzame materialen</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                  Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd met indien
+                  mogelijk duurzame en/of natuurlijke materialen en hebben als opvallende uiterlijke kenmerk de ‘ronde
+                  hoeken’, mogelijk gemaakt door het specifieke materiaalgebruik. De voordelen van bouwen met hout zijn
+                  legio:
+                  hout is licht, flexibel, isoleert goed en bouwt snel en efficiënt.
+                  Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd met indien
+                  mogelijk duurzame en/of natuurlijke materialen en hebben als opvallende uiterlijke kenmerk de ‘ronde
+                  hoeken’, mogelijk gemaakt door het specifieke materiaalgebruik. De voordelen van bouwen met hout zijn
+                  legio:
+                  hout is licht, flexibel, isoleert goed en bouwt snel en efficiënt.
+                  Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd met indien
+                  mogelijk duurzame en/of natuurlijke materialen en hebben als opvallende uiterlijke kenmerk de ‘ronde
+                  hoeken’, mogelijk gemaakt door het specifieke materiaalgebruik. De voordelen van bouwen met hout zijn
+                  legio:
+                  hout is licht, flexibel, isoleert goed en bouwt snel en efficiënt.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="materialen__img">
+          <img src="img/materialen__img.png" alt="Монтаж деревянных конструкций">
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
