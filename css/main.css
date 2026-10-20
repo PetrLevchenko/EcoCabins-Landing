@@ -110,7 +110,9 @@ h3 {
   font: 900 30px "Merriweather", sans-serif;
   color: #fff;
 }
-
+.materialen {
+  margin-bottom: -30px;
+}
 .materialen__inner {
   display: flex;
   gap: 73px;
@@ -152,12 +154,39 @@ h3 {
   transform: translateY(-102px);
 }
 
+.innovatie {
+  background: #26353b;
+}
+
+.innovatie__container {
+  max-width: 823px;
+  padding-top: 72px;
+  padding-bottom: 78px;
+}
+
+.innovatie__h2 {
+  font: 900 30px "Merriweather", sans-serif;
+  color: #fff;
+  margin-bottom: 9px;
+}
+
+.innovatie__col__text {
+  font: 400 14px / 1.71429 "Rubik", sans-serif;
+  color: #fff;
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 1030px) {}
+
 @media screen and (max-width: 768px) {
-.materialen__img {
-  transform: none;
+  .materialen__img {
+    transform: none;
+  }
+  .materialen {
+  margin-bottom: 30px;
 }
 }
+
 @media screen and (max-width: 670px) {
   .nav {
     flex-direction: column;
@@ -179,6 +208,7 @@ h3 {
     gap: 15px;
     justify-content: center;
   }
+
   .materialen__inner {
     flex-direction: column-reverse;
     align-items: center;
@@ -200,13 +230,16 @@ h3 {
     object-position: center;
     object-fit: contain;
   }
+
   .materialen__img img {
     width: 100%;
     height: auto;
   }
+
   .materialen__text {
     width: 100%;
   }
+  
 }
 
 @media screen and (max-width: 300px) {
@@ -217,9 +250,14 @@ h3 {
   .nav__h1 {
     font-size: 18px;
   }
+
   .materialen__h2 {
     font-size: 20px;
   }
+  .innovatie__h2 {
+    font-size: 20px;
+    margin-bottom: 19px;
+}
 }
 
 @media screen and (max-width: 200px) {}
