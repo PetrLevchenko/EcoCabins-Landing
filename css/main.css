@@ -110,9 +110,11 @@ h3 {
   font: 900 30px "Merriweather", sans-serif;
   color: #fff;
 }
+
 .materialen {
   margin-bottom: -30px;
 }
+
 .materialen__inner {
   display: flex;
   gap: 73px;
@@ -176,15 +178,61 @@ h3 {
   opacity: 0.7;
 }
 
+.hout__container {
+  max-width: 825px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.row__cards {
+  gap: 37px;
+}
+
+.row__cards>div {
+  width: 155px;
+  height: 93px;
+}
+
+.row__cards>div>h3 {
+  font: 900 18px "Merriweather", sans-serif;
+  color: #222f33;
+  text-wrap: nowrap;
+  margin-bottom: 4px;
+}
+
+.row__cards>div>p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #646d70;
+  opacity: 0.7;
+}
+
+
 @media screen and (max-width: 1030px) {}
 
 @media screen and (max-width: 768px) {
   .materialen__img {
     transform: none;
   }
+
   .materialen {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
+
+  .hout__row {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hout__img {
+    width: auto;
+  }
+
+  .row__cards {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 670px) {
@@ -213,6 +261,7 @@ h3 {
     flex-direction: column-reverse;
     align-items: center;
   }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -222,6 +271,16 @@ h3 {
 
   .header {
     height: 100vh;
+  }
+
+  .hout__img img {
+    width: 100%;
+  }
+
+  .hout__img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
   }
 }
 
@@ -239,7 +298,7 @@ h3 {
   .materialen__text {
     width: 100%;
   }
-  
+
 }
 
 @media screen and (max-width: 300px) {
@@ -254,10 +313,11 @@ h3 {
   .materialen__h2 {
     font-size: 20px;
   }
+
   .innovatie__h2 {
     font-size: 20px;
     margin-bottom: 19px;
-}
+  }
 }
 
 @media screen and (max-width: 200px) {}
